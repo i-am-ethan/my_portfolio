@@ -1,0 +1,434 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 ProN ProN", serif;
+}
+
+body header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #ff6451;
+}
+
+body header h1 {
+  text-align: center;
+}
+
+body header .pc_nav {
+  display: none;
+}
+
+body header .hamburger_menu input[type="checkbox"] {
+  opacity: 0;
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+body header .hamburger_menu img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+body header .hamburger_menu nav {
+  background-color: #208978;
+  opacity: 1;
+  width: 70%;
+  height: 80vh;
+  position: absolute;
+  top: 50px;
+  left: -5000px;
+}
+
+body header .hamburger_menu nav ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+body header .hamburger_menu nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+body header .hamburger_menu nav.show {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transform: translateX(5000px);
+          transform: translateX(5000px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body main {
+  padding-top: 50px;
+}
+
+body main .top {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .top p {
+  text-align: center;
+  margin: 60px;
+  line-height: 4rem;
+}
+
+body main .top iframe {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body main .about {
+  height: 100vh;
+}
+
+body main .about h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+body main .about p {
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  line-height: 1.2rem;
+  font-size: 3vw;
+}
+
+body main .about span {
+  background-color: pink;
+  width: 90%;
+  font-size: 1vw;
+  line-height: 0.6rem;
+}
+
+body main .about span a {
+  width: 90%;
+  font-size: 1vw;
+  line-height: 1rem;
+}
+
+body main .news {
+  height: 100vh;
+}
+
+body main .news h1 {
+  text-align: center;
+}
+
+body main .news .news_inner {
+  margin: 0 auto;
+  width: 90%;
+}
+
+body main .news .news_inner ul li {
+  background-color: #cbd6c0;
+  height: 40vh;
+  list-style: none;
+  margin: 15px;
+  border-radius: 20px;
+}
+
+body main .news .news_inner ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body main .news .news_inner ul li a article img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+body main .news .news_inner ul li a article h5 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 5px;
+}
+
+body main .news .news_inner ul li a article p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 3vw;
+  padding: 3px;
+}
+
+body main .form {
+  height: 80vh;
+}
+
+body main .form h1 {
+  text-align: center;
+}
+
+body main .form .form_inner {
+  width: 80%;
+  margin: 70px auto;
+}
+
+body main .form .form_inner ul li {
+  list-style: none;
+}
+
+body .top_button {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+body .top_button a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+body .top_button a img {
+  width: 20vw;
+  outline: none;
+}
+
+body footer {
+  background-color: black;
+}
+
+body footer p {
+  color: white;
+}
+
+@media screen and (min-width: 960px) {
+  body header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background-color: #ff6451;
+  }
+  body header h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  body header .pc_nav {
+    margin-top: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body header .pc_nav ul {
+    margin: 0 auto;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body header .pc_nav ul li {
+    list-style: none;
+  }
+  body header .pc_nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  body header .hamburger_menu {
+    display: none;
+  }
+  body header .hamburger_menu input[type="checkbox"] {
+    opacity: 0;
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  body header .hamburger_menu img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  body header .hamburger_menu nav {
+    background-color: #208978;
+    opacity: 1;
+    width: 70%;
+    height: 80vh;
+    position: absolute;
+    top: 50px;
+    left: -5000px;
+  }
+  body header .hamburger_menu nav ul li {
+    list-style: none;
+    padding: 1rem;
+  }
+  body header .hamburger_menu nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  body header .hamburger_menu nav.show {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+    -webkit-transform: translateX(5000px);
+            transform: translateX(5000px);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  body main {
+    padding-top: 70px;
+  }
+  body main .top {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .top p {
+    text-align: center;
+    margin: 60px;
+    line-height: 4rem;
+  }
+  body main .top iframe {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  body main .about {
+    height: 100vh;
+  }
+  body main .about h1 {
+    text-align: center;
+    margin: 10px;
+  }
+  body main .about p {
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    line-height: 2rem;
+    font-size: 2vw;
+  }
+  body main .about span {
+    background-color: pink;
+    width: 90%;
+    font-size: 1vw;
+    line-height: 0.6rem;
+  }
+  body main .about span a {
+    width: 90%;
+    font-size: 1vw;
+    line-height: 1rem;
+  }
+  body main .news {
+    height: 100vh;
+  }
+  body main .news h1 {
+    text-align: center;
+  }
+  body main .news .news_inner {
+    margin: 0 auto;
+    width: 90%;
+  }
+  body main .news .news_inner ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body main .news .news_inner ul li {
+    background-color: #cbd6c0;
+    height: 70vh;
+    width: 100%;
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+  }
+  body main .news .news_inner ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  body main .news .news_inner ul li a article img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  body main .news .news_inner ul li a article h5 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px;
+  }
+  body main .news .news_inner ul li a article p {
+    display: -webkit-box;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1vw;
+    padding: 10px;
+  }
+  body main .form {
+    height: 80vh;
+  }
+  body main .form h1 {
+    text-align: center;
+  }
+  body main .form .form_inner {
+    width: 80%;
+    margin: 70px auto;
+  }
+  body main .form .form_inner ul li {
+    list-style: none;
+  }
+  body .top_button {
+    display: none;
+  }
+  body footer {
+    background-color: black;
+  }
+  body footer p {
+    color: white;
+  }
+}
+/*# sourceMappingURL=style.css.map */
