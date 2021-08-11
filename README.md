@@ -39,3 +39,8 @@ https://icooon-mono.com/
 https://www.jiji.com/jc/article?k=000001915.000011710&g=prt
 
 https://www.photo-ac.com/main/detail/4553335?title=%E8%88%AC%E8%8B%A5%E3%81%AE%E3%81%8A%E9%9D%A2&searchId=2881480580
+
+
+サイトURL:
+https://github.com/i-am-ethan/mySite_2021.git
+(pass必要)
