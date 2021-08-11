@@ -42,5 +42,5 @@ https://www.photo-ac.com/main/detail/4553335?title=%E8%88%AC%E8%8B%A5%E3%81%AE%E
 
 
 サイトURL:
-https://github.com/i-am-ethan/mySite_2021.git
+https://ethan-san.sakura.ne.jp/first_portforio/mySite/
 (pass必要)
